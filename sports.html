@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fútbol - Español y Árabe</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+      overflow-x: hidden;
+    }
+    header {
+      position: relative;
+      background-image: url('https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg');
+      background-size: cover;
+      background-position: center;
+      height: 250px;
+    }
+    .icon {
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #fff;
+      border-radius: 50%;
+      padding: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(-10px); }
+    }
+    .icon img {
+      width: 50px;
+      height: 50px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-top: 60px;
+      color: #c60b1e;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 20px;
+      gap: 20px;
+    }
+    .side-image {
+      width: 100px;
+      animation: fadeIn 2s ease forwards;
+    }
+    .side-image img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 800px;
+      background-color: #fff3f3;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      animation: fadeInUp 1.5s ease forwards;
+    }
+    th, td {
+      text-align: left;
+      padding: 12px 15px;
+    }
+    th {
+      background-color: #c60b1e;
+      color: #fff;
+      font-size: 18px;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    tr:nth-child(even) {
+      background-color: #ffe6e6;
+    }
+    tr:hover {
+      background-color: #fbd4d4;
+      cursor: pointer;
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/197/197593.png" alt="icon">
+    </div>
+  </header>
+  <h1>Fútbol - كرة القدم</h1>
+  <div class="container">
+    <div class="side-image">
+      <img src="https://img.freepik.com/free-photo/soccer-ball-grass-stadium-generative-ai_188544-9584.jpg" alt="side 1">
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Spanish</th>
+          <th>Arabic</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Aficionado</td><td>مشجع</td></tr>
+        <tr><td>Alineación</td><td>التشكيلة</td></tr>
+        <tr><td>Árbitro</td><td>حكم</td></tr>
+        <tr><td>Asistencia</td><td>تمريرة حاسمة</td></tr>
+        <tr><td>Ataque</td><td>هجوم</td></tr>
+        <tr><td>Balón</td><td>كرة</td></tr>
+        <tr><td>Banquillo</td><td>دكة البدلاء</td></tr>
+        <tr><td>Cabeza</td><td>رأس</td></tr>
+        <tr><td>Cabecear</td><td>يضرب الكرة بالرأس</td></tr>
+        <tr><td>Cabezazo</td><td>ضربة رأس</td></tr>
+        <tr><td>Campo</td><td>الملعب</td></tr>
+        <tr><td>Cancha</td><td>ساحة اللعب</td></tr>
+        <tr><td>Capitán</td><td>كابتن الفريق</td></tr>
+        <tr><td>Centro</td><td>عرضية</td></tr>
+        <tr><td>Chutar</td><td>يسدد</td></tr>
+        <tr><td>Chut</td><td>تسديدة</td></tr>
+        <tr><td>Clasificación</td><td>ترتيب</td></tr>
+        <tr><td>Club</td><td>نادٍ</td></tr>
+        <tr><td>Cobertura</td><td>تغطية</td></tr>
+        <tr><td>Compañero</td><td>زميل</td></tr>
+        <tr><td>Contrataque</td><td>هجمة مرتدة</td></tr>
+        <tr><td>Control</td><td>تحكم</td></tr>
+        <tr><td>Copa</td><td>كأس</td></tr>
+        <tr><td>Corner</td><td>ركنية</td></tr>
+        <tr><td>Defensa</td><td>مدافع / دفاع</td></tr>
+        <tr><td>Delantero</td><td>مهاجم</td></tr>
+        <tr><td>Derrota</td><td>هزيمة</td></tr>
+        <tr><td>Desmarque</td><td>تحرك بدون كرة</td></tr>
+        <tr><td>Disparo</td><td>تسديدة</td></tr>
+        <tr><td>Dorsal</td><td>رقم القميص</td></tr>
+        <tr><td>Empate</td><td>تعادل</td></tr>
+        <tr><td>Entrenador</td><td>مدرب</td></tr>
+        <tr><td>Entrenamiento</td><td>تدريب</td></tr>
+        <tr><td>Equipo</td><td>فريق</td></tr>
+        <tr><td>Escudo</td><td>شعار النادي</td></tr>
+        <tr><td>Esquina</td><td>ركنية</td></tr>
+        <tr><td>Estadio</td><td>استاد</td></tr>
+        <tr><td>Expulsión</td><td>طرد</td></tr>
+        <tr><td>Falta</td><td>خطأ</td></tr>
+        <tr><td>Fanático</td><td>مشجع مهووس</td></tr>
+        <tr><td>Fútbol</td><td>كرة القدم</td></tr>
+        <tr><td>Futbolista</td><td>لاعب كرة</td></tr>
+        <tr><td>Gafas del VAR</td><td>نظارات الفار (مصطلح ساخر)</td></tr>
+        <tr><td>Goleador</td><td>هداف</td></tr>
+        <tr><td>Gol</td><td>هدف</td></tr>
+        <tr><td>Golazo</td><td>هدف رائع</td></tr>
+        <tr><td>Guardameta</td><td>حارس</td></tr>
+        <tr><td>Hincha</td><td>مشجع</td></tr>
+        <tr><td>Invasión de campo</td><td>اقتحام الملعب</td></tr>
+        <tr><td>Jugador</td><td>لاعب</td></tr>
+        <tr><td>Jugar</td><td>يلعب</td></tr>
+        <tr><td>Línea</td><td>خط (مثل خط التماس)</td></tr>
+        <tr><td>Lesión</td><td>إصابة</td></tr>
+        <tr><td>Liga</td><td>دوري</td></tr>
+        <tr><td>Lateral</td><td>ظهير</td></tr>
+        <tr><td>Libre directo</td><td>ركلة حرة مباشرة</td></tr>
+        <tr><td>Libre indirecto</td><td>ركلة غير مباشرة</td></tr>
+        <tr><td>Mano</td><td>لمسة يد</td></tr>
+        <tr><td>Marcador</td><td>النتيجة / اللوحة</td></tr>
+        <tr><td>Medio</td><td>وسط</td></tr>
+        <tr><td>Mediocampo</td><td>خط الوسط</td></tr>
+        <tr><td>Mundial</td><td>كأس العالم</td></tr>
+        <tr><td>Número</td><td>رقم</td></tr>
+        <tr><td>Oficial</td><td>رسمي</td></tr>
+        <tr><td>Oportunidad</td><td>فرصة</td></tr>
+        <tr><td>Penalti</td><td>ضربة جزاء</td></tr>
+        <tr><td>Pase</td><td>تمريرة</td></tr>
+        <tr><td>Pase largo</td><td>تمريرة طويلة</td></tr>
+        <tr><td>Pase corto</td><td>تمريرة قصيرة</td></tr>
+        <tr><td>Pelota</td><td>كرة</td></tr>
+        <tr><td>Perdedor</td><td>خاسر</td></tr>
+        <tr><td>Portero</td><td>حارس مرمى</td></tr>
+        <tr><td>Posición</td><td>مركز</td></tr>
+        <tr><td>Poste</td><td>قائم</td></tr>
+        <tr><td>Público</td><td>جمهور</td></tr>
+        <tr><td>Recambio</td><td>تبديل</td></tr>
+        <tr><td>Regate</td><td>مراوغة</td></tr>
+        <tr><td>Resultado</td><td>نتيجة</td></tr>
+        <tr><td>Revisión</td><td>مراجعة (VAR)</td></tr>
+        <tr><td>Rival</td><td>خصم</td></tr>
+        <tr><td>Roja</td><td>بطاقة حمراء</td></tr>
+        <tr><td>Saque</td><td>رمية / تنفيذ</td></tr>
+        <tr><td>Saque de banda</td><td>رمية تماس</td></tr>
+        <tr><td>Saque de esquina</td><td>ركنية</td></tr>
+        <tr><td>Saque de puerta</td><td>ضربة مرمى</td></tr>
+        <tr><td>Selección</td><td>منتخب</td></tr>
+        <tr><td>Silbato</td><td>صفارة</td></tr>
+        <tr><td>Sustitución</td><td>تبديل</td></tr>
+        <tr><td>Suplente</td><td>بديل</td></tr>
+        <tr><td>Táctica</td><td>تكتيك</td></tr>
+        <tr><td>Tarjeta</td><td>بطاقة</td></tr>
+        <tr><td>Tarjeta amarilla</td><td>بطاقة صفراء</td></tr>
+        <tr><td>Tarjeta roja</td><td>بطاقة حمراء</td></tr>
+        <tr><td>Técnica</td><td>مهارة</td></tr>
+        <tr><td>Temporada</td><td>موسم</td></tr>
+        <tr><td>Tiro</td><td>تسديدة</td></tr>
+        <tr><td>Tiro libre</td><td>ركلة حرة</td></tr>
+        <tr><td>Toque</td><td>لمسة</td></tr>
+        <tr><td>VAR</td><td>الفار</td></tr>
+        <tr><td>Victoria</td><td>فوز</td></tr>
+      </tbody>
+    </table>
+    <div class="side-image">
+      <img src="https://img.freepik.com/premium-photo/soccer-player-kicking-ball-generative-ai_934475-6391.jpg" alt="side 2">
+      <div style="text-align: center; margin-top: 20px;">
+        <button onclick="location.href='index.html'" style="background-color: #c60b1e; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: background-color 0.3s ease;">
+          Regreso
+        </button>
+      </div>
+    
+  </div>
+</body>
+</html>
